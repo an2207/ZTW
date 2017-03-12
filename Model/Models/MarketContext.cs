@@ -18,10 +18,7 @@ namespace Model.Models
         public DbSet<PhotoPath> PhotosPaths { get; set; }
         public DbSet<View> Views { get; set; }
 
-        public MarketContext()
-        {
-
-        }
+       
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
