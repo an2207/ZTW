@@ -15,4 +15,5 @@ namespace Model.Models
         public int? OfferId { get; set; }
         public Offer Offer { get; set; }
     }
+    
 }
