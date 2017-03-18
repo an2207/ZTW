@@ -44,6 +44,7 @@ li.link-active a:focus {
     .navbar li a {
         padding: 10px 16px;
         border-radius: 4px;
+        cursor:pointer;
     }
     .navbar a {
         /* If a menu item's text is too long, truncate it */
@@ -51,5 +52,6 @@ li.link-active a:focus {
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
+        cursor:pointer;
     }
 }

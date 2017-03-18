@@ -6,6 +6,8 @@ import { NavMenuComponent } from './components/navmenu/navmenu.component';
 import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { AuthLoginComponent } from './components/auth/auth-login.component';
+import { AuthRegisterComponent } from './components/auth/auth-register.component';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -14,7 +16,9 @@ import { CounterComponent } from './components/counter/counter.component';
         NavMenuComponent,
         CounterComponent,
         FetchDataComponent,
-        HomeComponent
+        HomeComponent,
+        AuthLoginComponent,
+        AuthRegisterComponent
     ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
@@ -23,7 +27,9 @@ import { CounterComponent } from './components/counter/counter.component';
             { path: 'home', component: HomeComponent },
             { path: 'counter', component: CounterComponent },
             { path: 'fetch-data', component: FetchDataComponent },
-            { path: '**', redirectTo: 'home' }
+            { path: 'login', component: AuthLoginComponent },
+            { path: 'register', component: AuthRegisterComponent }, 
+            { path: '**', redirectTo: 'home' },
         ])
     ]
 })
