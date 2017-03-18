@@ -52,3 +52,5 @@ var serverBundleConfig = merge(sharedConfig, {
 });
 
 module.exports = [clientBundleConfig, serverBundleConfig];
+
+
